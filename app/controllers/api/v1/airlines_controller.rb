@@ -1,6 +1,7 @@
 module Api 
-  module v1
+  module V1
   	class AirlinesController < ApplicationController
+  		protect_from_forgery with: :null_session
   		def index
   			airlines = Airline.all
 
