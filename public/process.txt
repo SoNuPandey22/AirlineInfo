@@ -1,2 +1,16 @@
 // To protect the authentication by default 
 protect_from_forgery with: :null_session 
+
+
+Create ReactJs Application 
+
+Javascript Folder:
+rails new rails-react-tutorial --webpack=react
+install gem "react-rails"
+rails webpacker:install:react //to install react on rals
+
+To generate react component 
+rails g react:component NameOfComponent Greeting:string
+
+
+yarn add react-router-dom
