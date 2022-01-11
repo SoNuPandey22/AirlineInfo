@@ -6,14 +6,18 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 import App from '../components/App'
-import {BrowserRouter as Router, Route} from "react-router-dom"
-
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes 
+  } from "react-router-dom"
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <Router>
-      <Route exact path="/" element={<App/>} />
-    </Router>,
+      <App />
+    </Router>
+    ,
     document.body.appendChild(document.createElement('div')),
   )
 })
